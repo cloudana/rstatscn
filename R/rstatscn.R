@@ -87,9 +87,9 @@ dataJson2df<-function(rawObj,rowcode,colcode)
         #jj[[2]][[2]] is description
         #jj[[2]][[2]][,"nodes"][[1]] is row description , it is a dataframe
         #jj[[2]][[2]][,"nodes"][[2]] is col description , it is a dataframe
-        desList=ret[[2]][[2]][,'nodes']
-	rowWdIdx = which(ret[[2]][[2]]$wdcode == rowcode) 
-	colWdIdx = which(ret[[2]][[2]]$wdcode == colcode) 
+        desList=ret[[2]][[4]][,'nodes']
+	rowWdIdx = which(ret[[2]][[4]]$wdcode == rowcode) 
+	colWdIdx = which(ret[[2]][[4]]$wdcode == colcode) 
         rowDes=desList[[rowWdIdx]]
         colDes=desList[[colWdIdx]]
 
